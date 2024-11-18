@@ -1,0 +1,63 @@
+For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.
+
+By default, this template supports JSX syntax with Tailwind CSS classes, the shadcn/ui library, React hooks, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
+
+Use icons from lucide-react for logos.
+
+Use stock photos from unsplash where appropriate, only valid URLs you know exist.
+
+## Project Structure
+
+project-root/
+├── src/
+│ ├── components/
+│ │ ├── ui/ # shadcn/ui components
+│ │ ├── payment/ # Stripe-related components
+│ │ └── layout/ # Layout components
+│ ├── lib/
+│ │ ├── utils.ts # Utility functions
+│ │ ├── auth.ts # Authentication helpers
+│ │ ├── stripe.ts # Stripe helpers
+│ │ └── config.ts # App configuration
+│ └── pages/ # Route pages
+├── netlify/
+│ └── functions/ # Serverless functions
+└── public/ # Static assets
+
+
+## Tech Stack
+- React + TypeScript + Vite
+- Tailwind CSS for styling
+- shadcn/ui component library
+- Lucide React for icons
+- Supabase for auth & database
+- Stripe for payments
+- Netlify for hosting & functions
+
+## Database Schema
+- Users (Supabase Auth)
+- Subscriptions (Stripe integration)
+- History (AI interaction logs)
+
+## Component Guidelines
+1. Use TypeScript for type safety
+2. Implement proper loading states
+3. Handle error states gracefully
+4. Follow shadcn/ui patterns
+5. Use React hooks for state
+6. Follow accessibility best practices
+
+## Styling Guidelines
+1. Use Tailwind CSS classes
+2. Follow mobile-first responsive design
+3. Maintain dark mode support
+4. Use CSS variables for theming
+5. Follow shadcn/ui class patterns
+
+## API Integration
+1. Use environment variables
+2. Implement proper error handling
+3. Follow RESTful principles
+4. Type all API responses
+
+Remember to maintain consistent code style and follow the established patterns in the existing codebase.
